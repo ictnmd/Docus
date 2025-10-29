@@ -1,0 +1,8 @@
+{
+  "label": "Danh Mục",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Những mục chính trong chủ đề hoá học THPT."
+  }
+}

@@ -1,0 +1,138 @@
+.periodic-container {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.toolbar input,
+.toolbar select,
+.toolbar button {
+  padding: 6px;
+  font-size: 14px;
+}
+
+.periodic-grid {
+  display: grid;
+  grid-template-columns: repeat(18, 50px);
+  grid-template-rows: repeat(10, 50px);
+  gap: 1px;
+  margin: 20px 0;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.element-cell {
+  border: 1px solid #666;
+  border-radius: 3px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.atomic-number {
+  font-size: 10px;
+  line-height: 1;
+}
+.atomic-number.small {
+  font-size: 9px;
+}
+
+.symbol {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.symbol.small {
+  font-size: 14px;
+}
+
+.viName {
+  font-size: 8px;
+  line-height: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.legend {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.legend-color {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #333;
+}
+
+.detail-card {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .periodic-grid {
+    grid-template-columns: repeat(18, 40px);
+    grid-template-rows: repeat(10, 40px);
+  }
+  .element-cell {
+    width: 40px;
+    height: 40px;
+    padding: 1px;
+  }
+  .symbol {
+    font-size: 14px;
+  }
+  .viName {
+    font-size: 7px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .periodic-grid {
+    grid-template-columns: repeat(18, 30px);
+    grid-template-rows: repeat(10, 30px);
+  }
+  .element-cell {
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+  }
+  .symbol {
+    font-size: 12px;
+  }
+  .symbol.small {
+    font-size: 10px;
+  }
+  .viName {
+    font-size: 6px;
+  }
+}

@@ -1,0 +1,42 @@
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  background: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+.faq-item.open {
+  background: #eef6ff;
+}
+
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-toggle {
+  font-size: 18px;
+  color: #0070f3;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 1s ease;
+  margin-top: 5px;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px; /* đủ để chứa nội dung */
+  opacity: 1;
+}
+
+.table-mausac td {
+  width: 50%;
+}
