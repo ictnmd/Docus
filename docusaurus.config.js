@@ -32,14 +32,13 @@ const config = {
     {
       tagName: "meta",
       attributes: {
-        name: "algolia-site-verification",
-        content: "A75CC2C1FC56E911", // ← nhập mã Algolia
+        name: "test:content",
       },
     },
   ],
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // say want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],

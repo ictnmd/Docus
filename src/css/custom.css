@@ -36,8 +36,25 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.table {
+.table-mausac {
   color: black;
+  width: 100% !important;
+  display: block !important;
+}
+
+.table-mausac tbody,
+.table-mausac tr,
+.table-mausac td {
+  width: 100% !important;
+  display: block !important; /* quan trọng nhất */
+}
+
+/* Hai cột bên trong chia 50% */
+.table-mausac .first,
+.table-mausac .second {
+  width: 50% !important;
+  display: inline-block !important;
+  vertical-align: top;
 }
 
 .table-mausac img {
@@ -89,4 +106,41 @@
 
 html[data-theme="dark"] .faq-item {
   color: black;
+}
+
+.table-img {
+  text-align: center;
+}
+
+.table-ion {
+  color: black;
+  width: 100% !important;
+  display: block !important;
+}
+
+.table-mausac tbody,
+.table-mausac tr,
+.table-mausac td {
+  width: 100% !important;
+  display: block !important; /* quan trọng nhất */
+}
+
+.table-ion .ion-first {
+  width: auto !important;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table-ion .ion-second {
+  width: 30% !important;
+  vertical-align: top;
+}
+
+.table-ion .ion-third {
+  width: 600% !important;
+  vertical-align: top;
+}
+
+html[data-theme="dark"] .table-ion {
+  color: white;
 }

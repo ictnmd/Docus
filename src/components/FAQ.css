@@ -33,10 +33,6 @@
 }
 
 .faq-item.open .faq-answer {
-  max-height: 1000px; /* đủ để chứa nội dung */
+  max-height: max-content; /* đủ để chứa nội dung */
   opacity: 1;
-}
-
-.table-mausac td {
-  width: 50%;
 }
