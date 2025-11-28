@@ -128,7 +128,7 @@ html[data-theme="dark"] .faq-item {
 .table-ion .ion-first {
   width: auto !important;
   vertical-align: middle;
-  text-align: center;
+  text-align: top;
 }
 
 .table-ion .ion-second {
@@ -137,7 +137,7 @@ html[data-theme="dark"] .faq-item {
 }
 
 .table-ion .ion-third {
-  width: 600% !important;
+  width: 100% !important;
   vertical-align: top;
 }
 

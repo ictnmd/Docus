@@ -650,7 +650,7 @@ export const searchData = [
   {
     "id": 82,
     "title": "III. Các Dụng Cụ Thí Nghiệm",
-    "description": "import FAQ from \"@site/src/components/FAQ\"; III. Các Dụng Cụ Thí Nghiệm 1. Các dụng cụ thuỷ tinh <table class=\"table-dungcu\" width=\"100%\" <thead <tr <th width=\"28%\" <strongTên dụng cụ</strong </th <th...",
+    "description": "import FAQ from \"@site/src/components/FAQ\"; III. Các Dụng Cụ Thí Nghiệm Nghiên cứu về các dụng cụ thí nghiệm và thao tác thực hành trong các bài thực hành Hóa cấp trung học phổ thông 1. Các dụng cụ th...",
     "keywords": [],
     "content": "III. Các Dụng Cụ Thí Nghiệm",
     "url": "/docs/danh-muc/kien-thuc-chung/dung-cu"
@@ -705,16 +705,16 @@ export const searchData = [
   },
   {
     "id": 89,
-    "title": "2. Một Số Thí Nghiệm Nhận Biết Các Chất",
-    "description": "import FAQ from \"@site/src/components/FAQ\"; 2. Một Số Thí Nghiệm Nhận Biết Các Chất Nhận biết cation, anion, các chất khí. <FAQ question=\"A. Nhận biết cation.\" answer={ < </ } / <FAQ question=\"B. Nhận...",
+    "title": "II. Một Số Thí Nghiệm Nhận Biết Các Chất",
+    "description": "import FAQ from \"@site/src/components/FAQ\"; II. Một Số Thí Nghiệm Nhận Biết Các Chất Nhận biết cation, anion, các chất khí. <FAQ question=\"A. Nhận biết cation.\" answer={ < </ } / <FAQ question=\"B. Nhậ...",
     "keywords": [],
-    "content": "2. Một Số Thí Nghiệm Nhận Biết Các Chất",
+    "content": "II. Một Số Thí Nghiệm Nhận Biết Các Chất",
     "url": "/docs/danh-muc/kien-thuc-chung/nhan-biet-chat/nhanbiet"
   },
   {
     "id": 90,
     "title": "I. Trạng Thái - Màu Sắc Của Một Số Chất",
-    "description": "import FAQ from \"@site/src/components/FAQ\"; I. Trạng Thái - Màu Sắc Của Một Số Chất Trạng thái và màu sắc của các chất như kim loại, phi kim, hợp chất. 1. Đơn chất: <table class=\"table-mausac\" <tbody ...",
+    "description": "import FAQ from \"@site/src/components/FAQ\"; I. Trạng Thái - Màu Sắc Của Một Số Chất Nghiên cứu, tổng hợp về màu sắc, trạng thái của một số chất hóa học thường gặp ở chương trình Hóa THPT 1. Đơn chất: ...",
     "keywords": [],
     "content": "I. Trạng Thái - Màu Sắc Của Một Số Chất",
     "url": "/docs/danh-muc/kien-thuc-chung/nhan-biet-chat/trangthai-mausac"
