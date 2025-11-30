@@ -1,18 +1,19 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 import elements from "./elements";
 import "./PeriodicTable.css";
 
+// Updated color palette using student-friendly colors
 const categoryColors = {
-  "kim loại kiềm": "#ffcccc",
-  "kim loại kiềm thổ": "#ffe5b4",
-  "kim loại chuyển tiếp": "#ffd700",
-  "kim loại hậu chuyển tiếp": "#cccccc",
-  "á kim": "#a3ffa3",
-  "phi kim": "#cce5ff",
-  halogen: "#fe9fadff",
-  "khí hiếm": "#ffffcc",
-  lantanide: "#e6ccff",
-  actinide: "#ffccff",
+  "kim loại kiềm": "#F6B1CE",      // Pink
+  "kim loại kiềm thổ": "#CCE5CF",  // Light green
+  "kim loại chuyển tiếp": "#1581BF", // Blue
+  "kim loại hậu chuyển tiếp": "#3DB6B1", // Teal
+  "á kim": "#CCE5CF",              // Light green
+  "phi kim": "#3DB6B1",            // Teal
+  halogen: "#F6B1CE",              // Pink
+  "khí hiếm": "#1581BF",           // Blue
+  lantanide: "#3DB6B1",            // Teal
+  actinide: "#F6B1CE",             // Pink
 };
 
 export default function PeriodicTable() {
@@ -45,44 +46,98 @@ export default function PeriodicTable() {
     });
   }, [search, filter]);
 
+  const detailCardRef = useRef(null);
+
+  // Close detail card when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (selected && detailCardRef.current && !detailCardRef.current.contains(event.target)) {
+        // Don't close if clicking on an element cell
+        if (!event.target.closest('.element-cell')) {
+          setSelected(null);
+        }
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [selected]);
+
   return (
     <div className="periodic-container">
-      {/* Thanh công cụ */}
-      <div className="toolbar">
-        <input
-          type="text"
-          placeholder="Tìm kiếm số, ký hiệu, tên..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <select value={filter} onChange={(e) => setFilter(e.target.value)}>
-          <option value="">--Tất cả nhóm--</option>
-          {Object.keys(categoryColors).map((cat) => (
-            <option key={cat} value={cat}>
-              {cat}
-            </option>
-          ))}
-        </select>
-        <button onClick={() => setShowDetails(!showDetails)}>
-          {showDetails ? "Ẩn chi tiết ô" : "Hiện chi tiết ô"}
-        </button>
-        <button
-          onClick={() => {
-            setSearch("");
-            setFilter("");
-          }}
-        >
-          Reset
-        </button>
+      {/* Header Section */}
+      <div className="periodic-header">
+        <h2 className="periodic-title">Bảng Tuần Hoàn Các Nguyên Tố Hóa Học</h2>
+        <p className="periodic-subtitle">Nhấp vào nguyên tố để xem chi tiết</p>
       </div>
+
+      {/* Toolbar */}
+      <div className="toolbar">
+        <div className="toolbar-group">
+          <div className="input-wrapper">
+            <svg className="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <input
+              type="text"
+              className="toolbar-input"
+              placeholder="Tìm kiếm: số, ký hiệu, tên nguyên tố..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
+          <div className="select-wrapper">
+            <select 
+              className="toolbar-select"
+              value={filter} 
+              onChange={(e) => setFilter(e.target.value)}
+            >
+              <option value="">Tất cả nhóm</option>
+              {Object.keys(categoryColors).map((cat) => (
+                <option key={cat} value={cat}>
+                  {cat}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+        <div className="toolbar-actions">
+          <button 
+            className="toolbar-btn secondary"
+            onClick={() => setShowDetails(!showDetails)}
+            title={showDetails ? "Ẩn tên tiếng Việt" : "Hiện tên tiếng Việt"}
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M8 1L10.5 5.5L15.5 6.5L12 9.5L12.5 14.5L8 12L3.5 14.5L4 9.5L0.5 6.5L5.5 5.5L8 1Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            </svg>
+            {showDetails ? "Ẩn tên" : "Hiện tên"}
+          </button>
+          <button
+            className="toolbar-btn secondary"
+            onClick={() => {
+              setSearch("");
+              setFilter("");
+            }}
+            title="Đặt lại bộ lọc"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+            Đặt lại
+          </button>
+        </div>
+      </div>
+
       {/* Legend */}
       <div className="legend">
-        {Object.entries(categoryColors).map(([cat, color]) => (
-          <span key={cat} className="legend-item">
-            <span className="legend-color" style={{ background: color }}></span>
-            {cat}
-          </span>
-        ))}
+        <div className="legend-title">Chú giải:</div>
+        <div className="legend-items">
+          {Object.entries(categoryColors).map(([cat, color]) => (
+            <div key={cat} className="legend-item">
+              <span className="legend-color" style={{ background: color }}></span>
+              <span className="legend-label">{cat}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Lưới bảng tuần hoàn */}
@@ -123,29 +178,64 @@ export default function PeriodicTable() {
         })}
       </div>
 
-      {/* Khung chi tiết nguyên tố */}
+      {/* Detail Card Modal */}
       {selected && (
-        <div className="detail-card">
-          <h3>
-            {selected.name} ({selected.symbol}) - {selected.viName}
-          </h3>
-          <p>
-            <b>Số hiệu nguyên tử:</b> {selected.number}
-          </p>
-          <p>
-            <b>Nguyên tử khối:</b> {selected.mass}
-          </p>
-          <p>
-            <b>Chu kỳ:</b> {selected.period}
-          </p>
-          <p>
-            <b>Trạng thái:</b> {selected.state}
-          </p>
-          <p>
-            <b>Phân loại:</b> {selected.category}
-          </p>
-          <button onClick={() => setSelected(null)}>Đóng</button>
-        </div>
+        <>
+          <div className="detail-overlay" onClick={() => setSelected(null)}></div>
+          <div className="detail-card" ref={detailCardRef}>
+            <div className="detail-header">
+              <div className="detail-symbol" style={{ background: categoryColors[selected.category] || "#1581BF" }}>
+                {selected.symbol}
+              </div>
+              <div className="detail-title">
+                <h3>{selected.viName}</h3>
+                <p className="detail-english">{selected.enName || selected.name || ''}</p>
+              </div>
+              <button 
+                className="detail-close"
+                onClick={() => setSelected(null)}
+                aria-label="Đóng"
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </button>
+            </div>
+            <div className="detail-content">
+              <div className="detail-row">
+                <span className="detail-label">Số hiệu nguyên tử</span>
+                <span className="detail-value">{selected.number}</span>
+              </div>
+              {selected.mass && (
+                <div className="detail-row">
+                  <span className="detail-label">Nguyên tử khối</span>
+                  <span className="detail-value">{selected.mass}</span>
+                </div>
+              )}
+              {selected.period && (
+                <div className="detail-row">
+                  <span className="detail-label">Chu kỳ</span>
+                  <span className="detail-value">{selected.period}</span>
+                </div>
+              )}
+              {selected.state && (
+                <div className="detail-row">
+                  <span className="detail-label">Trạng thái</span>
+                  <span className="detail-value">{selected.state}</span>
+                </div>
+              )}
+              <div className="detail-row">
+                <span className="detail-label">Phân loại</span>
+                <span 
+                  className="detail-badge"
+                  style={{ background: categoryColors[selected.category] || "#1581BF" }}
+                >
+                  {selected.category}
+                </span>
+              </div>
+            </div>
+          </div>
+        </>
       )}
     </div>
   );
