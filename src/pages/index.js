@@ -9,7 +9,7 @@ const GradeCards = [
   {
     title: "Hoá học 10",
     description: "Kiến thức cơ bản về nguyên tử, phân tử, phản ứng hóa học",
-    link: "/docs/danh-muc/hoa-10/tn1",
+    link: "/docs/hoa-10/tn1",
     icon: "🔬",
     color: "var(--grade-10-color)",
     gradient: "linear-gradient(135deg, #1581BF 0%, #3DB6B1 100%)",
@@ -17,7 +17,7 @@ const GradeCards = [
   {
     title: "Hoá học 11",
     description: "Các hợp chất hữu cơ, cấu trúc phân tử và phản ứng",
-    link: "/docs/danh-muc/hoa-11/tn1",
+    link: "/docs/hoa-11/tn1",
     icon: "⚗️",
     color: "var(--grade-11-color)",
     gradient: "linear-gradient(135deg, #3DB6B1 0%, #1581BF 100%)",
@@ -25,7 +25,7 @@ const GradeCards = [
   {
     title: "Hoá học 12",
     description: "Hóa học hữu cơ nâng cao, polime và ứng dụng",
-    link: "/docs/danh-muc/hoa-12/tn1",
+    link: "/docs/hoa-12/tn1",
     icon: "🧪",
     color: "var(--grade-12-color)",
     gradient: "linear-gradient(135deg, #F6B1CE 0%, #3DB6B1 100%)",
@@ -36,14 +36,14 @@ const CategoryCards = [
   {
     title: "Kiến thức chung",
     description: "Bảng tuần hoàn, dụng cụ, nhận biết chất",
-    link: "/docs/danh-muc/kien-thuc-chung/bang-tuan-hoan",
+    link: "/docs/kien-thuc-chung/bang-tuan-hoan",
     icon: "📚",
     gradient: "linear-gradient(135deg, #F6B1CE 0%, #CCE5CF 100%)",
   },
   {
     title: "Câu hỏi",
     description: "Câu hỏi và bài tập theo từng lớp",
-    link: "/docs/danh-muc/cauhoi/cauhoi10/halogen",
+    link: "/docs/cauhoi/cauhoi10/halogen",
     icon: "❓",
     gradient: "linear-gradient(135deg, #1581BF 0%, #3DB6B1 100%)",
   },
@@ -60,8 +60,8 @@ function HomepageHeader() {
           </Heading>
           <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
           <p className={styles.heroDescription}>
-            Nền tảng học tập hóa học trực tuyến với kiến thức toàn diện, 
-            thí nghiệm trực quan và tài liệu tham khảo phong phú
+            Nền tảng học tập hóa học trực tuyến với kiến thức toàn diện, thí
+            nghiệm trực quan và tài liệu tham khảo phong phú
           </p>
           <div className={styles.searchPrompt}>
             <span>Nhấn</span>
@@ -79,10 +79,7 @@ function HomepageHeader() {
 function GradeCard({ title, description, link, icon, gradient }) {
   return (
     <Link to={link} className={styles.gradeCard}>
-      <div 
-        className={styles.cardIcon}
-        style={{ background: gradient }}
-      >
+      <div className={styles.cardIcon} style={{ background: gradient }}>
         {icon}
       </div>
       <div className={styles.cardContent}>
@@ -97,10 +94,7 @@ function GradeCard({ title, description, link, icon, gradient }) {
 function CategoryCard({ title, description, link, icon, gradient }) {
   return (
     <Link to={link} className={styles.categoryCard}>
-      <div 
-        className={styles.categoryIcon}
-        style={{ background: gradient }}
-      >
+      <div className={styles.categoryIcon} style={{ background: gradient }}>
         {icon}
       </div>
       <div className={styles.categoryContent}>
@@ -126,7 +120,8 @@ export default function Home() {
               Chọn lớp học của bạn
             </Heading>
             <p className={styles.sectionDescription}>
-              Khám phá kiến thức hóa học theo từng lớp với các thí nghiệm và bài tập thực hành
+              Khám phá kiến thức hóa học theo từng lớp với các thí nghiệm và bài
+              tập thực hành
             </p>
             <div className={styles.gradeGrid}>
               {GradeCards.map((card, idx) => (
@@ -159,24 +154,24 @@ export default function Home() {
                 <div className={styles.featureIcon}>🎯</div>
                 <h3 className={styles.featureTitle}>Kiến thức toàn diện</h3>
                 <p className={styles.featureText}>
-                  Nội dung phong phú, bám sát chương trình Hóa học THPT, 
-                  đặc biệt phần thực hành
+                  Nội dung phong phú, bám sát chương trình Hóa học THPT, đặc
+                  biệt phần thực hành
                 </p>
               </div>
               <div className={styles.feature}>
                 <div className={styles.featureIcon}>🔍</div>
                 <h3 className={styles.featureTitle}>Tìm kiếm thông minh</h3>
                 <p className={styles.featureText}>
-                  Tìm kiếm nhanh chóng các thí nghiệm, hóa chất, dụng cụ 
-                  với công nghệ tìm kiếm tiên tiến
+                  Tìm kiếm nhanh chóng các thí nghiệm, hóa chất, dụng cụ với
+                  công nghệ tìm kiếm tiên tiến
                 </p>
               </div>
               <div className={styles.feature}>
                 <div className={styles.featureIcon}>📖</div>
                 <h3 className={styles.featureTitle}>Giao diện trực quan</h3>
                 <p className={styles.featureText}>
-                  Thiết kế hiện đại, dễ sử dụng, giúp học sinh tập trung 
-                  vào nội dung học tập
+                  Thiết kế hiện đại, dễ sử dụng, giúp học sinh tập trung vào nội
+                  dung học tập
                 </p>
               </div>
             </div>
