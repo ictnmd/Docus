@@ -1,14 +1,14 @@
 .faq-item {
-  border: 1px solid #ddd;
+  border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 5px;
   margin: 10px 0;
   padding: 10px;
-  background: #f9f9f9;
+  background: var(--ifm-color-emphasis-100);
   transition: background 0.3s ease;
 }
 
 .faq-item.open {
-  background: #eef6ff;
+  background: rgba(21, 129, 191, 0.08);
 }
 
 .faq-question {
@@ -21,7 +21,7 @@
 
 .faq-toggle {
   font-size: 18px;
-  color: #0070f3;
+  color: var(--ifm-color-primary);
 }
 
 .faq-answer {

@@ -83,23 +83,35 @@ const config = {
 
       //chỉnh sidebar trên
       navbar: {
-        title: "Home",
+        title: "Chem4HighSchool",
         logo: {
-          alt: "My Site Logo",
+          alt: "Chem4HighSchool Logo",
           src: "https://raw.githubusercontent.com/NCThanh1109/KHKT/main/dk.png",
+          width: 32,
+          height: 32,
         },
+        hideOnScroll: false,
         items: [
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Danh mục",
+            label: "📚 Danh mục",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
+            to: "/docs/danh-muc/hoa-10/tn1",
+            label: "Lớp 10",
+            position: "left",
+          },
+          {
+            to: "/docs/danh-muc/hoa-11/tn1",
+            label: "Lớp 11",
+            position: "left",
+          },
+          {
+            to: "/docs/danh-muc/hoa-12/tn1",
+            label: "Lớp 12",
+            position: "left",
           },
           {
             type: "search",
@@ -109,49 +121,44 @@ const config = {
       },
       //chỉnh sidebar dưới, thông tin cung cấp
       footer: {
-        style: "dark",
+        style: "light",
         links: [
           {
-            title: "Docs",
+            title: "Nội dung học tập",
             items: [
               {
-                label: "Danh mục",
+                label: "Hoá học 10",
+                to: "/docs/danh-muc/hoa-10/tn1",
+              },
+              {
+                label: "Hoá học 11",
+                to: "/docs/danh-muc/hoa-11/tn1",
+              },
+              {
+                label: "Hoá học 12",
+                to: "/docs/danh-muc/hoa-12/tn1",
+              },
+              {
+                label: "Kiến thức chung",
+                to: "/docs/danh-muc/kien-thuc-chung/bang-tuan-hoan",
+              },
+            ],
+          },
+          {
+            title: "Tài nguyên",
+            items: [
+              {
+                label: "Câu hỏi",
+                to: "/docs/danh-muc/cauhoi/cauhoi10/halogen",
+              },
+              {
+                label: "Giới thiệu",
                 to: "/docs/intro",
               },
             ],
           },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "X",
-                href: "https://x.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Chem4HighSchool. Nền tảng học tập hóa học cho học sinh THPT.`,
       },
       prism: {
         theme: prismThemes.github,

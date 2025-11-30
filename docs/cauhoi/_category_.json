@@ -1,0 +1,8 @@
+{
+  "label": "Câu hỏi trắc nghiệm",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Những câu hỏi ôn tập của từng nội dung bài học"
+  }
+}

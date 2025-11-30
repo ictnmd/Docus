@@ -1,0 +1,213 @@
+.equipmentCard {
+  background: var(--ifm-card-background-color, #ffffff);
+  border-radius: 16px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+[data-theme="dark"] .equipmentCard {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.equipmentCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--ifm-color-primary);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  background: linear-gradient(135deg, rgba(21, 129, 191, 0.03) 0%, rgba(61, 182, 177, 0.03) 100%);
+  transition: background 0.2s ease;
+}
+
+.cardHeader:hover {
+  background: linear-gradient(135deg, rgba(21, 129, 191, 0.08) 0%, rgba(61, 182, 177, 0.08) 100%);
+}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.cardNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  color: white;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.cardName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+  line-height: 1.4;
+}
+
+.expandButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--ifm-color-primary);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.expandButton:hover {
+  background: rgba(21, 129, 191, 0.1);
+  transform: scale(1.1);
+}
+
+.expandButton.expanded {
+  transform: rotate(180deg);
+}
+
+.expandButton.expanded:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+.cardContent {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cardDescription {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-font-color-base);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.cardDescription :global(p) {
+  margin-bottom: 0.75rem;
+}
+
+.cardDescription :global(strong) {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.cardDescription :global(ul),
+.cardDescription :global(ol) {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.cardDescription :global(li) {
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription :global(table) {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+.cardDescription :global(table td) {
+  padding: 0.75rem;
+  text-align: center;
+  vertical-align: top;
+}
+
+.cardDescription :global(table img) {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.imageLabel {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.equipmentImage {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background: var(--ifm-background-color);
+  padding: 0.5rem;
+}
+
+.equipmentImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .cardHeader {
+    padding: 1rem 1.25rem;
+  }
+
+  .cardContent {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+
+  .cardName {
+    font-size: 1rem;
+  }
+
+  .cardNumber {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .cardImages {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.75rem;
+  }
+}
+

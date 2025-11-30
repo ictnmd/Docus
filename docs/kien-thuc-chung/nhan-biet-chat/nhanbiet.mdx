@@ -1,0 +1,535 @@
+---
+sidebar_position: 2
+---
+
+import MathBlock from "@site/src/components/MathBlock";
+
+import FAQ from "@site/src/components/FAQ";
+
+# II. Một số gợi ý về thí nghiệm nhận biết chất:
+
+Cách nhận biết các chất thông qua thí nghiệm
+
+## 1. Nhận biết chất khí
+
+<FAQ
+  question="Các chất khí"
+  answer={
+    <>
+      <table class="table-gas">
+        <thead>
+          <tr>
+            <td class="gas-first">
+              <strong>Chất</strong>
+            </td>
+            <td class="gas-second">
+              <strong>Công thức</strong>
+            </td>
+            <td class="gas-third">
+              <strong>Trạng thái</strong>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="gas-first" rowSpan="4" style={{ fontWeight: "bold" }}>
+              Đơn chất
+            </td>
+            <td class="gas-second">O₂</td>
+            <td class="gas-third">↑ không màu, bùng cháy tàn đóm đỏ</td>
+          </tr>
+          <tr>
+            <td class="gas-second">H₂</td>
+            <td class="gas-third"> ↑ không màu, cháy với ngọn lửa màu xanh</td>
+          </tr>
+          <tr>
+            <td class="gas-second">N₂</td>
+            <td class="gas-third"> ↑ không màu, không duy trì sự cháy</td>
+          </tr>
+          <tr>
+            <td class="gas-second">Cl₂</td>
+            <td class="gas-third"> ↑ vàng lục</td>
+          </tr>
+          <tr>
+            <td class="gas-first" rowSpan="5" style={{ fontWeight: "bold" }}>
+              Hợp chất
+            </td>
+            <td class="gas-second">CO₂</td>
+            <td class="gas-third"> ↑ không màu, làm đục nước vôi trong</td>
+          </tr>
+          <tr>
+            <td class="gas-second">SO₂</td>
+            <td class="gas-third"> ↑ không màu, làm mất màu nước brom</td>
+          </tr>
+          <tr>
+            <td class="gas-second">H₂S</td>
+            <td class="gas-third"> ↑ không màu, mùi trứng thối</td>
+          </tr>
+          <tr>
+            <td class="gas-second">NO</td>
+            <td class="gas-third"> ↑ không màu, hóa nâu ngoài không khí</td>
+          </tr>
+          <tr>
+            <td class="gas-second">NO₂</td>
+            <td class="gas-third"> ↑ màu nâu</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+  }
+/>
+
+<FAQ
+  question="Nhận biết chất khí"
+  answer={
+    <>
+      <table class="table-gas-2">
+        <thead>
+          <tr>
+            <th class="first"><strong>Chất khí</strong></th>
+            <th class="second"><strong>Thuốc thử</strong></th>
+            <th class="third"><strong>Hiện tượng</strong></th>
+            <th class="fourth"><strong>Phương trình phản ứng</strong></th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          {/* CO₂ */}
+          <tr>
+            <td class="first" rowSpan="2"><strong>CO₂</strong></td>
+            <td class="second">Quì tím ẩm</td>
+            <td class="third">Hóa đỏ</td>
+            <td class="fourth"></td>
+          </tr>
+          <tr>
+            <td class="second">Ca(OH)₂, Ba(OH)₂</td>
+            <td class="third">↓ trắng</td>
+            <td class="fourth"><MathBlock formula={`\\text{Ca}(\\text{OH})_2 + \\text{CO}_2 \\longrightarrow \\text{CaCO}_3 \\downarrow + \\text{H}_2\\text{O}`}/></td>
+          </tr>
+
+          {/* SO₂ */}
+          <tr>
+            <td class="first" rowSpan="3"><strong>SO₂</strong></td>
+            <td class="second">Quì tím ẩm</td>
+            <td class="third">Hóa đỏ, sau đó mất màu</td>
+            <td class="fourth"></td>
+          </tr>
+          <tr>
+            <td class="second">Ca(OH)₂, Ba(OH)₂</td>
+            <td class="third">↓ trắng</td>
+            <td class="fourth"><MathBlock formula={`\\text{Ba}(\\text{OH})_2 + \\text{SO}_2 \\longrightarrow \\text{BaSO}_3 \\downarrow + \\text{H}_2\\text{O}`} /></td>
+          </tr>
+          <tr>
+            <td class="second">Br₂ + H₂O</td>
+            <td class="third">Mất màu nâu đỏ</td>
+            <td class="fourth"><MathBlock formula={`\\text{SO}_2 + \\text{Br}_2 + 2\\text{H}_2\\text{O} \\longrightarrow 2\\text{HBr} + \\text{H}_2\\text{SO}_4`}/></td>
+          </tr>
+
+          {/* HCl */}
+          <tr>
+            <td class="first" rowSpan="2"><strong>HCl</strong></td>
+            <td class="second">Quì tím ẩm</td>
+            <td class="third">Hóa đỏ</td>
+            <td class="fourth"></td>
+          </tr>
+          <tr>
+            <td class="second">NH₃ đặc</td>
+            <td class="third">Khói trắng</td>
+            <td class="fourth"><MathBlock formula={`\\text{NH}_3 + \\text{HCl} \\longrightarrow \\text{NH}_4\\text{Cl}`}/></td>
+          </tr>
+          {/* Cl₂ */}
+          <tr>
+            <td class="first" rowSpan="2"><strong>Cl₂</strong></td>
+            <td class="second">Quì tím ẩm</td>
+            <td class="third">Hóa đỏ, sau đó mất màu</td>
+            <td class="fourth">
+            </td>
+          </tr>
+          <tr>
+            <td class="second">Dung dịch KI + hồ tinh bột</td>
+            <td class="third">Xuất hiện màu xanh tím</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Cl}_2 + 2\\text{KI} \\longrightarrow 2\\text{KCl} + \\text{I}_2`}/>
+              <MathBlock formula={`\\text{I}_2 + \\text{Hồ Tinh Bột} \\longrightarrow \\text{Phức Màu Xanh Tím}`}/>
+            </td>
+          </tr>
+
+          {/* NH₃ */}
+          <tr>
+            <td class="first" rowSpan="2"><strong>NH₃</strong></td>
+            <td class="second">Quì tím ẩm</td>
+            <td class="third">Hóa xanh</td>
+            <td class="fourth"></td>
+          </tr>
+          <tr>
+            <td class="second">HCl đặc</td>
+            <td class="third">Khói trắng</td>
+            <td class="fourth"><MathBlock formula={`\\text{NH}_3 + \\text{HCl} \\longrightarrow \\text{NH}_4\\text{Cl}`}/></td>
+          </tr>
+
+          {/* H₂ */}
+          <tr>
+            <td class="first"><strong>H₂</strong></td>
+            <td class="second">CuO (đen) → Cu (đỏ)</td>
+            <td class="third"></td>
+            <td class="fourth"><MathBlock formula={`\\text{CuO} + \\text{H}_2 \\xrightarrow{\\text{t}^\\circ} \\text{Cu} + \\text{H}_2\\text{O}`}/></td>
+          </tr>
+
+          {/* O₂ */}
+          <tr>
+            <td class="first"><strong>O₂</strong></td>
+            <td class="second">Tàn đóm đỏ</td>
+            <td class="third">Bùng cháy</td>
+            <td class="fourth"><MathBlock formula={`\\text{C} + \\text{O}_2 \\xrightarrow{\\text{t}^\\circ} \\text{CO}_2`}/></td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+
+}
+/>
+
+## 2. Nhận biết cation
+
+<FAQ
+  question="Các cation chủ yếu"
+  answer={
+    <>
+      <table class="table-ion">
+        <thead>
+          <tr>
+            <th class="first"><strong>Ion</strong></th>
+            <th class="second"><strong>Thuốc thử</strong></th>
+            <th class="third"><strong>Hiện tượng</strong></th>
+            <th class="fourth"><strong>Phương trình phản ứng</strong></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {/* Na+ */}
+          <tr>
+            <td class="first"><strong>Na⁺</strong></td>
+            <td class="second" rowSpan="2">Đốt trên ngọn lửa vô sắc</td>
+            <td class="third">Ngọn lửa màu vàng tươi.</td>
+            <td class="fourth"></td>
+          </tr>
+
+          {/* K+ */}
+          <tr>
+            <td class="first"><strong>K⁺</strong></td>
+            <td class="third">Ngọn lửa màu tím.</td>
+            <td class="fourth"></td>
+          </tr>
+
+          {/* Ba2+ */}
+          <tr>
+            <td class="first"><strong>Ba²⁺</strong></td>
+            <td class="second">ion SO₄²⁻, CO₃²⁻ ion</td>
+            <td class="third">↓ trắng</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Ba}^{2+} + \\text{CO}_3^{2-} \\rightarrow \\text{BaCO}_3 \\downarrow`} />
+            </td>
+          </tr>
+          <tr>
+            <td class="first"><strong>Ca²⁺</strong></td>
+            <td class="second">CrO₄²⁻ ion</td>
+            <td class="third">↓ vàng chanh</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Ca}^{2+} + \\text{CrO}_4^{2-} \\rightarrow \\text{CaCrO}_4 \\downarrow`} />
+            </td>
+          </tr>
+
+          {/* Mg2+ */}
+          <tr>
+            <td class="first"><strong>Mg²⁺</strong></td>
+            <td class="second">OH⁻</td>
+            <td class="third">↓ trắng</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Mg}^{2+} + 2\\text{OH}^- \\rightarrow \\text{Mg(OH)}_2 \\downarrow`} />
+            </td>
+          </tr>
+
+          {/* Fe2+ */}
+          <tr>
+            <td class="first" rowSpan="2"><strong>Fe²⁺</strong></td>
+            <td class="second">OH⁻</td>
+            <td class="third">↓ trắng xanh</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Fe}^{2+} + 2\\text{OH}^- \\rightarrow \\text{Fe(OH)}_2 \\downarrow`} />
+            </td>
+          </tr>
+          <tr>
+            <td class="second">MnO₄⁻/H⁺</td>
+            <td class="third">mất màu tím</td>
+            <td class="fourth">
+              <MathBlock formula={`5\\text{Fe}^{2+} + \\text{MnO}_4^- + 8\\text{H}^+ \\rightarrow 5\\text{Fe}^{3+} + \\text{Mn}^{2+} + 4\\text{H}_2\\text{O}`} />
+            </td>
+          </tr>
+
+          {/* Fe3+ */}
+          <tr>
+            <td class="first" rowSpan="2"><strong>Fe³⁺</strong></td>
+            <td class="second">OH⁻</td>
+            <td class="third">↓ đỏ nâu</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Fe}^{3+} + 3\\text{OH}^- \\rightarrow \\text{Fe(OH)}_3 \\downarrow`} />
+            </td>
+          </tr>
+          <tr>
+            <td class="second">SCN⁻</td>
+            <td class="third">màu đỏ máu</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Fe}^{3+} + 3\\text{SCN}^- \\rightarrow \\text{Fe(SCN)}_3`} />
+            </td>
+          </tr>
+
+          {/* NH4+ */}
+          <tr>
+            <td class="first"><strong>NH₄⁺</strong></td>
+            <td class="second">OH⁻</td>
+            <td class="third">↑ mùi khai</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{NH}_4^+ + \\text{OH}^- \\rightarrow \\text{NH}_3 \\uparrow + \\text{H}_2\\text{O}`} />
+            </td>
+          </tr>
+
+          {/* Al3+ */}
+          <tr>
+            <td class="first"><strong>Al³⁺</strong></td>
+            <td class="second">OH⁻</td>
+            <td class="third">↓ keo trắng, tan trong OH⁻ dư</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Al}^{3+} + 3\\text{OH}^- \\rightarrow \\text{Al(OH)}_3 \\downarrow`} />
+              <MathBlock formula={`\\text{Al(OH)}_3 + 2\\text{OH}^- \\rightarrow \\text{AlO}_2^- + 2\\text{H}_2\\text{O}`} />
+            </td>
+          </tr>
+
+          {/* Cr3+ */}
+          <tr>
+            <td class="first"><strong>Cr³⁺</strong></td>
+            <td class="second">OH⁻</td>
+            <td class="third">↓ xám, tan trong OH⁻ dư</td>
+            <td class="fourth">tương tự Al</td>
+          </tr>
+
+          {/* Pb2+ */}
+          <tr>
+            <td class="first" rowSpan="2"><strong>Pb²⁺</strong></td>
+            <td class="second">OH⁻</td>
+            <td class="third">↓ trắng, tan trong OH⁻ dư</td>
+            <td class="fourth">tương tự Zn</td>
+          </tr>
+          <tr>
+            <td class="second">S²⁻</td>
+            <td class="third">↓ đen, không tan trong axit</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Pb}^{2+} + \\text{S}^{2-} \\rightarrow \\text{PbS} \\downarrow`} />
+            </td>
+          </tr>
+
+          {/* Zn2+ */}
+          <tr>
+            <td class="first" rowSpan="2"><strong>Zn²⁺</strong></td>
+            <td class="second">OH⁻</td>
+            <td class="third">↓ trắng, tan trong OH⁻ dư</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Zn(OH)}_2 + 2\\text{OH}^- \\rightarrow \\text{ZnO}_2^{2-} + 2\\text{H}_2\\text{O}`} />
+            </td>
+          </tr>
+          <tr>
+            <td class="second">dung dịch NH₃ dư</td>
+            <td class="third">↓ trắng, tan trong NH₃ dư</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Zn(OH)}_2 + 4\\text{NH}_3 \\rightarrow [\\text{Zn(NH}_3)_4](\\text{OH})_2`} />
+            </td>
+          </tr>
+
+          {/* Cu2+ */}
+          <tr>
+            <td class="first" rowSpan="2"><strong>Cu²⁺</strong></td>
+            <td class="second">OH⁻</td>
+            <td class="third">↓ xanh</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Cu}^{2+} + 2\\text{OH}^- \\rightarrow \\text{Cu(OH)}_2 \\downarrow`} />
+            </td>
+          </tr>
+          <tr>
+            <td class="second">dung dịch NH₃ dư</td>
+            <td class="third">xanh, tan trong NH₃ dư tạo phức xanh lam</td>
+            <td class="fourth">tương tự Zn</td>
+          </tr>
+
+          {/* Ag+ */}
+          <tr>
+            <td class="first" rowSpan="3"><strong>Ag⁺</strong></td>
+            <td class="second">Cl⁻</td>
+            <td class="third">↓ trắng</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Ag}^+ + \\text{Cl}^- \\rightarrow \\text{AgCl} \\downarrow`} />
+            </td>
+          </tr>
+          <tr>
+            <td class="second">Br⁻</td>
+            <td class="third">↓ vàng nhạt</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Ag}^+ + \\text{Br}^- \\rightarrow \\text{AgBr} \\downarrow`} />
+            </td>
+          </tr>
+          <tr>
+            <td class="second">I⁻</td>
+            <td class="third">↓ vàng đậm</td>
+            <td class="fourth">
+              <MathBlock formula={`\\text{Ag}^+ + \\text{I}^- \\rightarrow \\text{AgI} \\downarrow`} />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+
+}
+/>
+
+## 3. Nhận biết anion
+
+<FAQ
+  question="Các anion chủ yếu"
+  answer={
+    <>
+      <table className="table-gas-2">
+        <thead>
+          <tr>
+            <th className="first"><strong>Ion</strong></th>
+            <th className="second"><strong>Thuốc thử</strong></th>
+            <th className="third"><strong>Hiện tượng</strong></th>
+            <th className="fourth"><strong>Phương trình phản ứng</strong></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {/* Cl− */}
+          <tr>
+            <td className="first"><strong>Cl⁻</strong></td>
+            <td className="second">Ag⁺</td>
+            <td className="third">↓ trắng</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{Ag}^+ + \\text{Cl}^- \\rightarrow \\text{AgCl} \\downarrow`} />
+            </td>
+          </tr>
+
+          {/* Br− */}
+          <tr>
+            <td className="first"><strong>Br⁻</strong></td>
+            <td className="second">Ag⁺</td>
+            <td className="third">↓ vàng nhạt</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{Ag}^+ + \\text{Br}^- \\rightarrow \\text{AgBr} \\downarrow`} />
+            </td>
+          </tr>
+
+          {/* I− */}
+          <tr>
+            <td className="first"><strong>I⁻</strong></td>
+            <td className="second">Ag⁺</td>
+            <td className="third">↓ vàng đậm</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{Ag}^+ + \\text{I}^- \\rightarrow \\text{AgI} \\downarrow`} />
+            </td>
+          </tr>
+
+          {/* SO4 2− */}
+          <tr>
+            <td className="first"><strong>SO₄²⁻</strong></td>
+            <td className="second">Ca²⁺, Ba²⁺</td>
+            <td className="third">↓ trắng</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{Ba}^{2+} + \\text{SO}_4^{2-} \\rightarrow \\text{BaSO}_4 \\downarrow`} />
+            </td>
+          </tr>
+
+          {/* PO4 3− */}
+          <tr>
+            <td className="first"><strong>PO₄³⁻</strong></td>
+            <td className="second">Ca²⁺</td>
+            <td className="third">↓ trắng</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{Ca}^{2+} + \\text{PO}_4^{3-} \\rightarrow \\text{Ca}_3(\\text{PO}_4)_2 \\downarrow`} />
+            </td>
+          </tr>
+
+          {/* CO3 2− */}
+          <tr>
+            <td className="first"><strong>CO₃²⁻</strong></td>
+            <td className="second">Ca²⁺, Ba²⁺</td>
+            <td className="third">↓ trắng</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{Ca}^{2+} + \\text{CO}_3^{2-} \\rightarrow \\text{CaCO}_3 \\downarrow`} />
+            </td>
+          </tr>
+
+          {/* SO3 2− */}
+          <tr>
+            <td className="first"><strong>SO₃²⁻</strong></td>
+            <td className="second">H⁺</td>
+            <td className="third">↑ sủi bọt</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{CO}_3^{2-} + 2\\text{H}^+ \\rightarrow \\text{CO}_2 \\uparrow + \\text{H}_2\\text{O}`} />
+            </td>
+          </tr>
+
+          {/* HS− */}
+          <tr>
+            <td className="first"><strong>HS⁻</strong></td>
+            <td className="second">H⁺</td>
+            <td className="third">↑ mùi trứng thối</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{HS}^- + \\text{H}^+ \\rightarrow \\text{H}_2\\text{S} \\uparrow`} />
+            </td>
+          </tr>
+
+          {/* HCO3− */}
+          <tr>
+            <td className="first"><strong>HCO₃⁻</strong></td>
+            <td className="second">H⁺</td>
+            <td className="third">↑ sủi bọt</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{HCO}_3^- + \\text{H}^+ \\rightarrow \\text{CO}_2 \\uparrow + \\text{H}_2\\text{O}`} />
+            </td>
+          </tr>
+
+          {/* HSO3− */}
+          <tr>
+            <td className="first"><strong>HSO₃⁻</strong></td>
+            <td className="second">Đun nóng</td>
+            <td className="third">↑ sủi bọt</td>
+            <td className="fourth">
+              <MathBlock formula={`2\\text{HSO}_3^- \\rightarrow \\text{CO}_2 \\uparrow + \\text{SO}_2 \\uparrow + \\text{H}_2\\text{O}`} />
+            </td>
+          </tr>
+
+          {/* NO2− */}
+          <tr>
+            <td className="first"><strong>NO₂⁻</strong></td>
+            <td className="second">Cu/H⁺</td>
+            <td className="third">↑ không màu, hóa nâu ngoài không khí</td>
+            <td className="fourth">
+              <MathBlock formula={`3\\text{Cu} + 8\\text{H}^+ + 2\\text{NO}_2^- \\rightarrow 3\\text{Cu}^{2+} + 2\\text{NO} \\uparrow + 4\\text{H}_2\\text{O}`} />
+            </td>
+          </tr>
+
+          {/* S2− */}
+          <tr>
+            <td className="first"><strong>S²⁻</strong></td>
+            <td className="second">Cu²⁺, Pb²⁺, Ag⁺</td>
+            <td className="third">↓ đen</td>
+            <td className="fourth">
+              <MathBlock formula={`\\text{Cu}^{2+} + \\text{S}^{2-} \\rightarrow \\text{CuS} \\downarrow`} />
+              <MathBlock formula={`\\text{Ag}^+ + \\text{S}^{2-} \\rightarrow \\text{Ag}_2\\text{S} \\downarrow`} />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+
+}
+/>

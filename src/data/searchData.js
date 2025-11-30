@@ -650,7 +650,7 @@ export const searchData = [
   {
     "id": 82,
     "title": "II. Các Dụng Cụ Thí Nghiệm",
-    "description": "import FAQ from \"@site/src/components/FAQ\"; II. Các Dụng Cụ Thí Nghiệm Nghiên cứu về các dụng cụ thí nghiệm và thao tác thực hành trong các bài thực hành Hóa cấp trung học phổ thông 1. Các dụng cụ thu...",
+    "description": "import EquipmentSection from \"@site/src/components/EquipmentSection\"; import { glassEquipment, metalEquipment } from \"@site/src/components/EquipmentData\"; II. Các Dụng Cụ Thí Nghiệm Nghiên cứu về các ...",
     "keywords": [],
     "content": "II. Các Dụng Cụ Thí Nghiệm",
     "url": "/docs/danh-muc/kien-thuc-chung/dung-cu"
@@ -694,5 +694,549 @@ export const searchData = [
     "keywords": [],
     "content": "Lời mở đầu",
     "url": "/docs/intro"
+  },
+  {
+    "id": 88,
+    "title": "Test tube (Ống nghiệm)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Test tube (Ống nghiệm). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Test tube (Ống nghiệm)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Test tube (Ống nghiệm)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 89,
+    "title": "Beakers (Cốc thủy tinh)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Beakers (Cốc thủy tinh). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Beakers (Cốc thủy tinh)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Beakers (Cốc thủy tinh)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 90,
+    "title": "Erlenmeyer flask (Bình tam giác)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Erlenmeyer flask (Bình tam giác). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Erlenmeyer flask (Bình tam giác)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Erlenmeyer flask (Bình tam giác)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 91,
+    "title": "Volumetric flask (Bình định mức)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Volumetric flask (Bình định mức). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Volumetric flask (Bình định mức)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Volumetric flask (Bình định mức)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 92,
+    "title": "Graduated cylinder (Ống đong)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Graduated cylinder (Ống đong). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Graduated cylinder (Ống đong)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Graduated cylinder (Ống đong)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 93,
+    "title": "Pipette (Pipet/Ống nhỏ giọt)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Pipette (Pipet/Ống nhỏ giọt). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Pipette (Pipet/Ống nhỏ giọt)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Pipette (Pipet/Ống nhỏ giọt)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 94,
+    "title": "Buret",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Buret. Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Buret",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Buret",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 95,
+    "title": "Spherical flask (Bình cầu)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Spherical flask (Bình cầu). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Spherical flask (Bình cầu)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Spherical flask (Bình cầu)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 96,
+    "title": "Glass Condenser (Ống sinh hàn)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Glass Condenser (Ống sinh hàn). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Glass Condenser (Ống sinh hàn)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Glass Condenser (Ống sinh hàn)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 97,
+    "title": "Separatory funnel (Phễu chiết)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Separatory funnel (Phễu chiết). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Separatory funnel (Phễu chiết)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Separatory funnel (Phễu chiết)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 98,
+    "title": "Filtering flask (Bình lọc)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Filtering flask (Bình lọc). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Filtering flask (Bình lọc)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Filtering flask (Bình lọc)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 99,
+    "title": "Watch glass (Mặt kính đồng hồ)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Watch glass (Mặt kính đồng hồ). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Watch glass (Mặt kính đồng hồ)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Watch glass (Mặt kính đồng hồ)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 100,
+    "title": "Fusion tube (Ống nung chảy)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Fusion tube (Ống nung chảy). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Fusion tube (Ống nung chảy)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Fusion tube (Ống nung chảy)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 101,
+    "title": "Reagent bottle (Chai đựng hóa chất)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Reagent bottle (Chai đựng hóa chất). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Reagent bottle (Chai đựng hóa chất)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Reagent bottle (Chai đựng hóa chất)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 102,
+    "title": "Petri dish (Đĩa petri)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Petri dish (Đĩa petri). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Petri dish (Đĩa petri)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Petri dish (Đĩa petri)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 103,
+    "title": "Glass rod (Đũa thủy tinh)",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Glass rod (Đũa thủy tinh). Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Glass rod (Đũa thủy tinh)",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Glass rod (Đũa thủy tinh)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 104,
+    "title": "Đèn cồn",
+    "description": "Dụng cụ thí nghiệm thuỷ tinh: Đèn cồn. Xem chi tiết trong phần Các dụng cụ thuỷ tinh.",
+    "keywords": [
+      "Đèn cồn",
+      "thuỷ tinh",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "glass"
+    ],
+    "content": "Đèn cồn",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "glass"
+  },
+  {
+    "id": 105,
+    "title": "Buret clamp (Kẹp buret)",
+    "description": "Dụng cụ thí nghiệm kim loại: Buret clamp (Kẹp buret). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Buret clamp (Kẹp buret)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Buret clamp (Kẹp buret)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 106,
+    "title": "Clamp (Kẹp)",
+    "description": "Dụng cụ thí nghiệm kim loại: Clamp (Kẹp). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Clamp (Kẹp)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Clamp (Kẹp)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 107,
+    "title": "Test tube brush (Chổi cọ ống nghiệm)",
+    "description": "Dụng cụ thí nghiệm kim loại: Test tube brush (Chổi cọ ống nghiệm). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Test tube brush (Chổi cọ ống nghiệm)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Test tube brush (Chổi cọ ống nghiệm)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 108,
+    "title": "Test tube stand (Giá để ống nghiệm)",
+    "description": "Dụng cụ thí nghiệm kim loại: Test tube stand (Giá để ống nghiệm). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Test tube stand (Giá để ống nghiệm)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Test tube stand (Giá để ống nghiệm)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 109,
+    "title": "Tongs (Kẹp gắp)",
+    "description": "Dụng cụ thí nghiệm kim loại: Tongs (Kẹp gắp). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Tongs (Kẹp gắp)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Tongs (Kẹp gắp)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 110,
+    "title": "Utility clamp (Kẹp đa năng)",
+    "description": "Dụng cụ thí nghiệm kim loại: Utility clamp (Kẹp đa năng). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Utility clamp (Kẹp đa năng)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Utility clamp (Kẹp đa năng)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 111,
+    "title": "Spot test plate (Tấm vi phiến)",
+    "description": "Dụng cụ thí nghiệm kim loại: Spot test plate (Tấm vi phiến). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Spot test plate (Tấm vi phiến)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Spot test plate (Tấm vi phiến)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 112,
+    "title": "Tripod for Bunsen burner (Kiềng 3 chân)",
+    "description": "Dụng cụ thí nghiệm kim loại: Tripod for Bunsen burner (Kiềng 3 chân). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Tripod for Bunsen burner (Kiềng 3 chân)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Tripod for Bunsen burner (Kiềng 3 chân)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 113,
+    "title": "Wash Bottle (Bình tia)",
+    "description": "Dụng cụ thí nghiệm kim loại: Wash Bottle (Bình tia). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Wash Bottle (Bình tia)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Wash Bottle (Bình tia)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 114,
+    "title": "Wire Mesh Gauze (Ceramic Centre) (Lưới amiăng)",
+    "description": "Dụng cụ thí nghiệm kim loại: Wire Mesh Gauze (Ceramic Centre) (Lưới amiăng). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Wire Mesh Gauze (Ceramic Centre) (Lưới amiăng)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Wire Mesh Gauze (Ceramic Centre) (Lưới amiăng)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 115,
+    "title": "Spatula (Thìa lấy hóa chất/Thìa cân)",
+    "description": "Dụng cụ thí nghiệm kim loại: Spatula (Thìa lấy hóa chất/Thìa cân). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Spatula (Thìa lấy hóa chất/Thìa cân)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Spatula (Thìa lấy hóa chất/Thìa cân)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 116,
+    "title": "Mortar and pestle (Cối và chày)",
+    "description": "Dụng cụ thí nghiệm kim loại: Mortar and pestle (Cối và chày). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Mortar and pestle (Cối và chày)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Mortar and pestle (Cối và chày)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 117,
+    "title": "Bếp điện",
+    "description": "Dụng cụ thí nghiệm kim loại: Bếp điện. Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Bếp điện",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Bếp điện",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 118,
+    "title": "Digital Balance (Cân điện tử)",
+    "description": "Dụng cụ thí nghiệm kim loại: Digital Balance (Cân điện tử). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Digital Balance (Cân điện tử)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Digital Balance (Cân điện tử)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
+  },
+  {
+    "id": 119,
+    "title": "Buchner funnel vacuum filtration setup (Hệ thống lọc hút chân không phễu Buchner)",
+    "description": "Dụng cụ thí nghiệm kim loại: Buchner funnel vacuum filtration setup (Hệ thống lọc hút chân không phễu Buchner). Xem chi tiết trong phần Các dụng cụ kim loại.",
+    "keywords": [
+      "Buchner funnel vacuum filtration setup (Hệ thống lọc hút chân không phễu Buchner)",
+      "kim loại",
+      "dụng cụ",
+      "thiết bị",
+      "phòng thí nghiệm",
+      "metal"
+    ],
+    "content": "Buchner funnel vacuum filtration setup (Hệ thống lọc hút chân không phễu Buchner)",
+    "url": "/docs/danh-muc/kien-thuc-chung/dung-cu",
+    "type": "equipment",
+    "category": "metal"
   }
 ];

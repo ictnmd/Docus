@@ -255,6 +255,18 @@ export default function ModalSearch({ onClose }) {
     function onKey(e) {
       if (e.key === "Escape") {
         onClose();
+      } else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        setActive((prev) => (prev < results.length - 1 ? prev + 1 : prev));
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        setActive((prev) => (prev > 0 ? prev - 1 : prev));
+      } else if (e.key === "Enter" && results.length > 0) {
+        e.preventDefault();
+        const activeResult = results[active];
+        if (activeResult) {
+          window.location.href = activeResult.url;
+        }
       }
     }
     window.addEventListener("keydown", onKey);
@@ -273,6 +285,16 @@ export default function ModalSearch({ onClose }) {
     document.addEventListener("mousedown", onClick);
     return () => document.removeEventListener("mousedown", onClick);
   }, [onClose]);
+
+  // Scroll active item into view
+  useEffect(() => {
+    if (listRef.current) {
+      listRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    }
+  }, [active]);
 
   const doSearch = (raw) => {
     const normalized = normalizeChemicalText(raw);
@@ -334,25 +356,38 @@ export default function ModalSearch({ onClose }) {
         </div>
 
         <div className={styles.hintRow}>
-          <small>Nhấn Esc để thoát</small>
+          <small>Nhấn <kbd>Esc</kbd> để thoát • <kbd>↑</kbd><kbd>↓</kbd> để điều hướng • <kbd>Enter</kbd> để chọn</small>
         </div>
         <div className={styles.resultsWrap}>
-          {results.map((item, index) => (
-            <li
-              key={item.id}
-              ref={index === active ? listRef : null}
-              className={`${styles.resultCard} ${
-                index === active ? styles.active : ""
-              }`}
-            >
-              <Link to={item.url}>
-                <h4 className={styles.cardTitle}>{item.title}</h4>
-                {item.description && (
-                  <p className={styles.cardDesc}>{item.description}</p>
-                )}
-              </Link>
-            </li>
-          ))}
+          {results.length === 0 && query.length > 1 ? (
+            <div className={styles.noResults}>
+              <p>Không tìm thấy kết quả cho "{query}"</p>
+              <p className={styles.noResultsHint}>
+                Thử tìm kiếm với từ khóa khác hoặc kiểm tra chính tả
+              </p>
+            </div>
+          ) : results.length === 0 && query.length <= 1 ? (
+            <div className={styles.noResults}>
+              <p>Nhập từ khóa để tìm kiếm...</p>
+            </div>
+          ) : (
+            results.map((item, index) => (
+              <li
+                key={item.id}
+                ref={index === active ? listRef : null}
+                className={`${styles.resultCard} ${
+                  index === active ? styles.active : ""
+                }`}
+              >
+                <Link to={item.url}>
+                  <h4 className={styles.cardTitle}>{item.title}</h4>
+                  {item.description && (
+                    <p className={styles.cardDesc}>{item.description}</p>
+                  )}
+                </Link>
+              </li>
+            ))
+          )}
         </div>
       </div>
     </div>

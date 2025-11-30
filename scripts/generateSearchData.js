@@ -4,6 +4,7 @@ const matter = require("gray-matter");
 
 const docsDir = path.join(__dirname, "..", "docs");
 const outFile = path.join(__dirname, "..", "src", "data", "searchData.js");
+const equipmentDataFile = path.join(__dirname, "..", "src", "components", "EquipmentData.js");
 
 // Lấy toàn bộ file .md / .mdx
 function getAllDocs(dir) {
@@ -21,6 +22,71 @@ function getAllDocs(dir) {
     }
   }
   return mdFiles;
+}
+
+// Extract equipment data from EquipmentData.js
+function extractEquipmentData() {
+  try {
+    const content = fs.readFileSync(equipmentDataFile, "utf8");
+    const equipmentItems = [];
+    
+    // Extract glass equipment - match all title fields
+    const glassTitles = [];
+    const glassRegex = /export const glassEquipment = \[([\s\S]*?)\];/;
+    const glassMatch = content.match(glassRegex);
+    if (glassMatch) {
+      // Find all title: "..." patterns in the glass equipment array
+      const titleRegex = /title:\s*"([^"]+)"/g;
+      let match;
+      while ((match = titleRegex.exec(glassMatch[1])) !== null) {
+        glassTitles.push(match[1]);
+      }
+    }
+    
+    // Extract metal equipment - match all title fields
+    const metalTitles = [];
+    const metalRegex = /export const metalEquipment = \[([\s\S]*?)\];/;
+    const metalMatch = content.match(metalRegex);
+    if (metalMatch) {
+      // Find all title: "..." patterns in the metal equipment array
+      const titleRegex = /title:\s*"([^"]+)"/g;
+      let match;
+      while ((match = titleRegex.exec(metalMatch[1])) !== null) {
+        metalTitles.push(match[1]);
+      }
+    }
+    
+    // Create search items for glass equipment
+    glassTitles.forEach(title => {
+      equipmentItems.push({
+        title: title,
+        description: `Dụng cụ thí nghiệm thuỷ tinh: ${title}. Xem chi tiết trong phần Các dụng cụ thuỷ tinh.`,
+        keywords: [title, "thuỷ tinh", "dụng cụ", "thiết bị", "phòng thí nghiệm", "glass"],
+        content: title,
+        url: "/docs/danh-muc/kien-thuc-chung/dung-cu",
+        type: "equipment",
+        category: "glass"
+      });
+    });
+    
+    // Create search items for metal equipment
+    metalTitles.forEach(title => {
+      equipmentItems.push({
+        title: title,
+        description: `Dụng cụ thí nghiệm kim loại: ${title}. Xem chi tiết trong phần Các dụng cụ kim loại.`,
+        keywords: [title, "kim loại", "dụng cụ", "thiết bị", "phòng thí nghiệm", "metal"],
+        content: title,
+        url: "/docs/danh-muc/kien-thuc-chung/dung-cu",
+        type: "equipment",
+        category: "metal"
+      });
+    });
+    
+    return equipmentItems;
+  } catch (error) {
+    console.warn("Warning: Could not extract equipment data:", error.message);
+    return [];
+  }
 }
 
 // Tạo URL dạng /docs/...
@@ -60,6 +126,7 @@ function buildSearchData() {
   let data = [];
   let id = 1;
 
+  // Add all markdown files
   for (let file of files) {
     const raw = fs.readFileSync(file, "utf8");
     const parsed = matter(raw);
@@ -93,6 +160,21 @@ function buildSearchData() {
       keywords,
       content: firstHeading,
       url: docPathToUrl(file),
+    });
+  }
+
+  // Add equipment items
+  const equipmentItems = extractEquipmentData();
+  for (const item of equipmentItems) {
+    data.push({
+      id: id++,
+      title: item.title,
+      description: item.description,
+      keywords: item.keywords,
+      content: item.content,
+      url: item.url,
+      type: item.type,
+      category: item.category,
     });
   }
 
