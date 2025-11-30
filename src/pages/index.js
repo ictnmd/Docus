@@ -9,7 +9,7 @@ const GradeCards = [
   {
     title: "Hoá học 10",
     description: "Kiến thức cơ bản về nguyên tử, phân tử, phản ứng hóa học",
-    link: "/docs/danh-muc/hoa-10/tn1",
+    link: "/docs/hoa-10/tn1",
     icon: "🔬",
     color: "var(--grade-10-color)",
     gradient: "linear-gradient(135deg, #1581BF 0%, #3DB6B1 100%)",
@@ -17,7 +17,7 @@ const GradeCards = [
   {
     title: "Hoá học 11",
     description: "Các hợp chất hữu cơ, cấu trúc phân tử và phản ứng",
-    link: "/docs/danh-muc/hoa-11/tn1",
+    link: "/docs/hoa-11/tn1",
     icon: "⚗️",
     color: "var(--grade-11-color)",
     gradient: "linear-gradient(135deg, #3DB6B1 0%, #1581BF 100%)",
@@ -25,7 +25,7 @@ const GradeCards = [
   {
     title: "Hoá học 12",
     description: "Hóa học hữu cơ nâng cao, polime và ứng dụng",
-    link: "/docs/danh-muc/hoa-12/tn1",
+    link: "/docs/hoa-12/tn1",
     icon: "🧪",
     color: "var(--grade-12-color)",
     gradient: "linear-gradient(135deg, #F6B1CE 0%, #3DB6B1 100%)",
@@ -36,14 +36,14 @@ const CategoryCards = [
   {
     title: "Kiến thức chung",
     description: "Bảng tuần hoàn, dụng cụ, nhận biết chất",
-    link: "/docs/danh-muc/kien-thuc-chung/bang-tuan-hoan",
+    link: "/docs/kien-thuc-chung/bang-tuan-hoan",
     icon: "📚",
     gradient: "linear-gradient(135deg, #F6B1CE 0%, #CCE5CF 100%)",
   },
   {
     title: "Câu hỏi",
     description: "Câu hỏi và bài tập theo từng lớp",
-    link: "/docs/danh-muc/cauhoi/cauhoi10/halogen",
+    link: "/docs/cauhoi/cauhoi10/halogen",
     icon: "❓",
     gradient: "linear-gradient(135deg, #1581BF 0%, #3DB6B1 100%)",
   },

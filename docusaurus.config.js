@@ -99,17 +99,17 @@ const config = {
             label: "📚 Danh mục",
           },
           {
-            to: "/docs/danh-muc/hoa-10/tn1",
+            to: "/docs/hoa-10/tn1",
             label: "Lớp 10",
             position: "left",
           },
           {
-            to: "/docs/danh-muc/hoa-11/tn1",
+            to: "/docs/hoa-11/tn1",
             label: "Lớp 11",
             position: "left",
           },
           {
-            to: "/docs/danh-muc/hoa-12/tn1",
+            to: "/docs/hoa-12/tn1",
             label: "Lớp 12",
             position: "left",
           },
@@ -128,19 +128,19 @@ const config = {
             items: [
               {
                 label: "Hoá học 10",
-                to: "/docs/danh-muc/hoa-10/tn1",
+                to: "/docs/hoa-10/tn1",
               },
               {
                 label: "Hoá học 11",
-                to: "/docs/danh-muc/hoa-11/tn1",
+                to: "/docs/hoa-11/tn1",
               },
               {
                 label: "Hoá học 12",
-                to: "/docs/danh-muc/hoa-12/tn1",
+                to: "/docs/hoa-12/tn1",
               },
               {
                 label: "Kiến thức chung",
-                to: "/docs/danh-muc/kien-thuc-chung/bang-tuan-hoan",
+                to: "/docs/kien-thuc-chung/bang-tuan-hoan",
               },
             ],
           },
@@ -149,7 +149,7 @@ const config = {
             items: [
               {
                 label: "Câu hỏi",
-                to: "/docs/danh-muc/cauhoi/cauhoi10/halogen",
+                to: "/docs/cauhoi/cauhoi10/halogen",
               },
               {
                 label: "Giới thiệu",

@@ -63,7 +63,7 @@ function extractEquipmentData() {
         description: `Dụng cụ thí nghiệm thuỷ tinh: ${title}. Xem chi tiết trong phần Các dụng cụ thuỷ tinh.`,
         keywords: [title, "thuỷ tinh", "dụng cụ", "thiết bị", "phòng thí nghiệm", "glass"],
         content: title,
-        url: "/docs/danh-muc/kien-thuc-chung/dung-cu",
+        url: "/docs/kien-thuc-chung/dung-cu",
         type: "equipment",
         category: "glass"
       });
@@ -76,7 +76,7 @@ function extractEquipmentData() {
         description: `Dụng cụ thí nghiệm kim loại: ${title}. Xem chi tiết trong phần Các dụng cụ kim loại.`,
         keywords: [title, "kim loại", "dụng cụ", "thiết bị", "phòng thí nghiệm", "metal"],
         content: title,
-        url: "/docs/danh-muc/kien-thuc-chung/dung-cu",
+        url: "/docs/kien-thuc-chung/dung-cu",
         type: "equipment",
         category: "metal"
       });
