@@ -8,70 +8,71 @@
 :root {
   /* Student-friendly color palette */
   /* Primary: Blue (#1581BF) - Main brand color */
-  --ifm-color-primary: #1581BF;
+  --ifm-color-primary: #1581bf;
   --ifm-color-primary-dark: #1269a0;
   --ifm-color-primary-darker: #105f91;
   --ifm-color-primary-darkest: #0d4e77;
   --ifm-color-primary-light: #1a99d8;
   --ifm-color-primary-lighter: #1da3e2;
   --ifm-color-primary-lightest: #2db0eb;
-  
+
   /* Secondary: Teal (#3DB6B1) - Accent color */
-  --ifm-color-secondary: #3DB6B1;
+  --ifm-color-secondary: #3db6b1;
   --ifm-color-secondary-dark: #32918d;
   --ifm-color-secondary-darker: #2d8581;
   --ifm-color-secondary-darkest: #256d6a;
   --ifm-color-secondary-light: #4dc5c0;
   --ifm-color-secondary-lighter: #52c9c4;
   --ifm-color-secondary-lightest: #66d1cc;
-  
+
   /* Accent: Pink (#F6B1CE) - Highlights and special elements */
-  --accent-pink: #F6B1CE;
+  --accent-pink: #f6b1ce;
   --accent-pink-dark: #e89ab8;
   --accent-pink-darker: #e18ba9;
   --accent-pink-darkest: #c96d8f;
   --accent-pink-light: #f8c8de;
   --accent-pink-lighter: #f9d0e3;
   --accent-pink-lightest: #fbdfeb;
-  
+
   /* Background: Light Green (#CCE5CF) - Subtle backgrounds */
-  --background-green: #CCE5CF;
+  --background-green: #cce5cf;
   --background-green-dark: #b3d4b6;
   --background-green-darker: #a6cba9;
   --background-green-darkest: #8ab88e;
   --background-green-light: #d5ead8;
   --background-green-lighter: #ddeee0;
   --background-green-lightest: #e5f2e7;
-  
+
   /* Additional chemistry-themed variables */
-  --grade-10-color: #1581BF;
-  --grade-11-color: #3DB6B1;
-  --grade-12-color: #F6B1CE;
-  
+  --grade-10-color: #1581bf;
+  --grade-11-color: #3db6b1;
+  --grade-12-color: #f6b1ce;
+
   /* Typography */
-  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.7;
-  
+
   /* Code */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(21, 129, 191, 0.1);
-  
+
   /* Buttons */
-  --btn-bg: #1581BF;
+  --btn-bg: #1581bf;
   --btn-bg-hover: #1269a0;
   --btn-text: #fff;
   --btn-radius: 12px;
   --btn-padding: 12px 24px;
   --btn-shadow: 0 6px 18px rgba(21, 129, 191, 0.25);
   --btn-shadow-active: 0 3px 8px rgba(0, 0, 0, 0.18);
-  
+
   /* Spacing and layout */
   --ifm-spacing-horizontal: 1.5rem;
   --ifm-navbar-height: 70px;
   --ifm-navbar-padding-vertical: 0.75rem;
-  
+
   /* Cards and surfaces */
   --ifm-card-border-radius: 16px;
   --ifm-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -82,29 +83,29 @@
   --ifm-color-primary: #2db0eb;
   --ifm-color-primary-dark: #1da3e2;
   --ifm-color-primary-darker: #1a99d8;
-  --ifm-color-primary-darkest: #1581BF;
+  --ifm-color-primary-darkest: #1581bf;
   --ifm-color-primary-light: #3db8ed;
   --ifm-color-primary-lighter: #4ec0ef;
   --ifm-color-primary-lightest: #6fcff3;
-  
+
   --ifm-color-secondary: #66d1cc;
   --ifm-color-secondary-dark: #52c9c4;
   --ifm-color-secondary-darker: #4dc5c0;
-  --ifm-color-secondary-darkest: #3DB6B1;
+  --ifm-color-secondary-darkest: #3db6b1;
   --ifm-color-secondary-light: #7ad9d4;
   --ifm-color-secondary-lighter: #8ee1dc;
   --ifm-color-secondary-lightest: #a2e9e4;
-  
+
   --accent-pink: #fbdfeb;
   --accent-pink-dark: #f9d0e3;
   --accent-pink-darker: #f8c8de;
-  --accent-pink-darkest: #F6B1CE;
+  --accent-pink-darkest: #f6b1ce;
   --accent-pink-light: #fce8f2;
   --accent-pink-lighter: #fdf1f7;
   --accent-pink-lightest: #fef9fc;
-  
+
   --docusaurus-highlighted-code-line-bg: rgba(21, 129, 191, 0.3);
-  
+
   /* Dark mode adjustments */
   --ifm-background-color: #0d1117;
   --ifm-background-surface-color: #161b22;
@@ -179,7 +180,7 @@
 }
 
 html[data-theme="dark"] .faq-item {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .table-img {
@@ -217,6 +218,7 @@ html[data-theme="dark"] .table-ion {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.95) !important;
+  z-index: 110; /* keep navbar above sidebar backdrop on mobile */
 }
 
 [data-theme="dark"] .navbar {
@@ -230,6 +232,57 @@ html[data-theme="dark"] .table-ion {
 
 .navbar__item {
   font-weight: 500;
+}
+
+.navbar__brand,
+.navbar__link,
+.navbar__toggle,
+.navbar__toggle svg,
+.navbar__items .clean-btn {
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme="dark"] .navbar__brand,
+[data-theme="dark"] .navbar__link,
+[data-theme="dark"] .navbar__toggle,
+[data-theme="dark"] .navbar__toggle svg,
+[data-theme="dark"] .navbar__items .clean-btn {
+  color: #fff;
+}
+
+.navbar__toggle {
+  border: 1px solid transparent;
+}
+
+.navbar-sidebar {
+  background: var(--ifm-background-color, #fff);
+  backdrop-filter: blur(8px);
+  z-index: 120; /* ensure menu sits above navbar */
+}
+
+[data-theme="dark"] .navbar-sidebar {
+  background: var(--ifm-background-color, #0d1117);
+}
+
+.navbar-sidebar__backdrop {
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 115;
+}
+
+.navbar-sidebar .navbar__item,
+.navbar-sidebar .navbar__link,
+.navbar-sidebar .menu__link,
+.navbar-sidebar .menu__caret,
+.navbar-sidebar .clean-btn {
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme="dark"] .navbar-sidebar .navbar__item,
+[data-theme="dark"] .navbar-sidebar .navbar__link,
+[data-theme="dark"] .navbar-sidebar .menu__link,
+[data-theme="dark"] .navbar-sidebar .menu__caret,
+[data-theme="dark"] .navbar-sidebar .clean-btn {
+  color: #fff;
 }
 
 /* Enhanced button styles */
@@ -246,7 +299,7 @@ html[data-theme="dark"] .table-ion {
 }
 
 .button--primary {
-  background: linear-gradient(135deg, #1581BF 0%, #3DB6B1 100%);
+  background: linear-gradient(135deg, #1581bf 0%, #3db6b1 100%);
   border: none;
 }
 
@@ -290,7 +343,11 @@ html[data-theme="dark"] .table-ion {
 }
 
 .menu__link--active {
-  background: linear-gradient(90deg, rgba(21, 129, 191, 0.1) 0%, rgba(61, 182, 177, 0.1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 129, 191, 0.1) 0%,
+    rgba(61, 182, 177, 0.1) 100%
+  );
   border-left: 3px solid var(--ifm-color-primary);
   font-weight: 600;
 }
@@ -308,7 +365,12 @@ html[data-theme="dark"] .table-ion {
 }
 
 /* Better typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.3;
 }
@@ -339,7 +401,11 @@ table {
 }
 
 thead {
-  background: linear-gradient(135deg, rgba(21, 129, 191, 0.1) 0%, rgba(61, 182, 177, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(21, 129, 191, 0.1) 0%,
+    rgba(61, 182, 177, 0.1) 100%
+  );
 }
 
 /* Smooth scrolling */
@@ -349,7 +415,11 @@ html {
 
 /* Enhanced footer */
 .footer {
-  background: linear-gradient(135deg, rgba(21, 129, 191, 0.05) 0%, rgba(61, 182, 177, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(21, 129, 191, 0.05) 0%,
+    rgba(61, 182, 177, 0.05) 100%
+  );
   border-top: 1px solid var(--ifm-color-emphasis-200);
 }
 

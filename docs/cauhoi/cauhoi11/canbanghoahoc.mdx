@@ -1,0 +1,535 @@
+---
+sidebar_position: 1
+---
+
+import MathBlock from "@site/src/components/MathBlock";
+
+import QuestBox from "@site/src/components/QuestBox";
+
+# Cân Bằng Hoá Học
+
+Ôn tập kiến thức về cân bằng hoá học
+
+<QuestBox
+  questionJSX={<>Câu 1: Phản ứng thuận nghịch là phản ứng</>}
+  options={[
+    {
+      text: "A. Trong cùng điều kiện, phản ứng xảy ra theo hai chiều trái ngược nhau.",
+      correct: true,
+    },
+    {
+      text: "B. Có phương trình hoá học được biểu diễn bằng mũi tên một chiều.",
+      correct: false,
+    },
+    { text: "C. Chỉ xảy ra theo một chiều nhất định.", correct: false },
+    { text: "D. Xảy ra giữa hai chất khí.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 2: Mối quan hệ giữa tốc độ phản ứng thuận vt và tốc độ phản ứng nghịch
+      vn ở trạng thái cân bằng được biểu diễn như thế nào?
+    </>
+  }
+  options={[
+    {
+      jsx: <MathBlock formula={`\\text{v}_\\text{t} = 2\\text{v}_\\text{n}`} />,
+      correct: false,
+    },
+    {
+      jsx: (
+        <MathBlock
+          formula={`\\text{v}_\\text{t} = \\text{v}_\\text{n} \\neq 0`}
+        />
+      ),
+      correct: true,
+    },
+    {
+      jsx: (
+        <MathBlock formula={`\\text{v}_\\text{t} = 0.5\\text{v}_\\text{n}`} />
+      ),
+      correct: false,
+    },
+    {
+      jsx: (
+        <MathBlock formula={`\\text{v}_\\text{t} = \\text{v}_\\text{n} = 0`} />
+      ),
+      correct: false,
+    },
+  ]}
+/>
+<QuestBox
+  questionJSX={<>Câu 3: Tại nhiệt độ không đổi, ở trạng thái cân bằng,</>}
+  options={[
+    {
+      text: "A. Thành phần của các chất trong hỗn hợp phản ứng không thay đổi.",
+      correct: true,
+    },
+    {
+      text: "B. Thành phần của các chất trong hỗn hợp phản ứng vẫn liên tục thay đổi.",
+      correct: false,
+    },
+    { text: "C. Phản ứng hoá học không xảy ra.", correct: false },
+    { text: "D. Tốc độ phản ứng hoá học xảy ra chậm dần.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 4: Trong các phát biểu sau đây, phát biểu nào đúng khi một hệ ở trạng
+      thái cân bằng?
+    </>
+  }
+  options={[
+    { text: "A. Phản ứng thuận đã dừng.", correct: false },
+    { text: "B. Phản ứng nghịch đã dừng.", correct: false },
+    { text: "C. Nồng độ chất tham gia và sản phẩm bằng nhau.", correct: false },
+    { text: "D. Nồng độ của các chất trong hệ không đổi.", correct: true },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>Câu 5: Khi một hệ ở trạng thái cân bằng thì trạng thái đó là</>
+  }
+  options={[
+    { text: "A. Cân bằng tĩnh.", correct: false },
+    { text: "B. Cân bằng động.", correct: true },
+    { text: "C. Cân bằng bền.", correct: false },
+    { text: "D. Cân bằng không bền.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 6: Sự phá vỡ cân bằng cũ để chuyển sang một cân bằng mới do các yếu tố
+      bên ngoài tác động được gọi là
+    </>
+  }
+  options={[
+    { text: "A. Sự biến đổi chất.", correct: false },
+    { text: "B. Sự dịch chuyển cân bằng.", correct: true },
+    { text: "C. Sự chuyển đổi vận tốc phản ứng.", correct: false },
+    { text: "D. Sự biến đổi hằng số cân bằng.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={<>Câu 7: Cân bằng hóa học liên quan đến loại phản ứng</>}
+  options={[
+    { text: "A. Không thuận nghịch.", correct: false },
+    { text: "B. Thuận nghịch.", correct: true },
+    { text: "C. Một chiều.", correct: false },
+    { text: "D. Oxi hóa – khử.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 8: “Cân bằng hóa học là trạng thái của phản ứng thuận nghịch khi tốc
+      độ phản ứng thuận ... tốc độ phản ứng nghịch”.
+    </>
+  }
+  options={[
+    { text: "A. Lớn hơn", correct: false },
+    { text: "B. Bằng", correct: true },
+    { text: "C. Nhỏ hơn", correct: false },
+    { text: "D. Khác", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>Câu 9: Khi phản ứng thuận nghịch ở trạng thái cân bằng thì nó</>
+  }
+  options={[
+    { text: "A. Không xảy ra nữa.", correct: false },
+    { text: "B. Vẫn tiếp tục xảy ra.", correct: true },
+    { text: "C. Chỉ xảy ra theo chiều thuận.", correct: false },
+    { text: "D. Chỉ xảy ra theo chiều nghịch.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 10: Cho cân bằng:
+      <MathBlock
+        formula={`\\text{H}_2 (g) + \\text{I}_2 (g) \\rightleftharpoons 2\\text{HI} (g)`}
+      />
+      Cân bằng không bị chuyển dịch khi:
+    </>
+  }
+  options={[
+    { text: "A. tăng nhiệt độ của hệ.", correct: false },
+    { text: "B. giảm nồng độ HI.", correct: false },
+    { text: "C. tăng nồng độ H2.", correct: false },
+    { text: "D. giảm áp suất chung của hệ.", correct: true },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 11: Cho cân bằng hoá học:
+      <MathBlock
+        formula={`\\text{N}_2\\text{(g)} + 3\\text{H}_2\\text{(g)} \\rightleftharpoons 2\\text{NH}_3\\text{(g)}`}
+      />
+      Phản ứng thuận là phản ứng tỏa nhiệt. Cân bằng không bị dịch chuyển khi
+    </>
+  }
+  options={[
+    { text: "A. Thay đổi áp suất của hệ.", correct: false },
+    { text: "B. Thay đổi nồng độ N₂.", correct: false },
+    { text: "C. Thay đổi nhiệt độ.", correct: false },
+    { text: "D. Thêm chất xúc tác.", correct: true },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 12: Cho cân bằng:
+      <MathBlock
+        formula={`2\\text{SO}_2\\text{(g)} + \\text{O}_2\\text{(g)} \\rightleftharpoons 2\\text{SO}_3\\text{(g)}`}
+      />
+      Phản ứng thuận tỏa nhiệt. Phát biểu đúng là:
+    </>
+  }
+  options={[
+    {
+      text: "A. Cân bằng chuyển dịch theo chiều thuận khi tăng nhiệt độ.",
+      correct: false,
+    },
+    {
+      text: "B. Cân bằng chuyển dịch theo chiều nghịch khi giảm nồng độ O₂.",
+      correct: true,
+    },
+    {
+      text: "C. Cân bằng chuyển dịch theo chiều thuận khi giảm áp suất.",
+      correct: false,
+    },
+    {
+      text: "D. Cân bằng chuyển dịch theo chiều nghịch khi giảm nồng độ SO₃.",
+      correct: false,
+    },
+  ]}
+/>
+
+<QuestBox
+  questionJSX={<>Câu 13: Các yếu tố ảnh hưởng đến cân bằng hoá học là</>}
+  options={[
+    { text: "A. nồng độ, nhiệt độ và chất xúc tác.", correct: false },
+    { text: "B. nồng độ, áp suất và diện tích bề mặt.", correct: false },
+    { text: "C. nồng độ, nhiệt độ và áp suất.", correct: true },
+    { text: "D. áp suất, nhiệt độ và chất xúc tác.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={<>Câu 14: Đối với hệ cân bằng, nếu thêm chất xúc tác thì:</>}
+  options={[
+    { text: "A. Chỉ làm tăng tốc độ phản ứng thuận.", correct: false },
+    { text: "B. Chỉ làm tăng tốc độ phản ứng nghịch.", correct: false },
+    {
+      text: "C. Làm tăng tốc độ phản ứng thuận và nghịch như nhau.",
+      correct: true,
+    },
+    { text: "D. Không làm tăng tốc độ phản ứng.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={<>Câu 15: Phát biểu nào sau đây không đúng?</>}
+  options={[
+    {
+      text: "A. Phản ứng thuận nghịch xảy ra đồng thời hai chiều.",
+      correct: false,
+    },
+    { text: "B. Phản ứng một chiều có thể xảy ra hoàn toàn.", correct: false },
+    {
+      text: "C. Phản ứng thuận nghịch không thể xảy ra hoàn toàn.",
+      correct: false,
+    },
+    {
+      text: "D. Hiệu suất phản ứng thuận nghịch có thể đạt đến 100%.",
+      correct: true,
+    },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 16: Cho cân bằng:
+      <MathBlock
+        formula={`\\text{H}_2\\text{(g)} + \\text{I}_2\\text{(g)} \\rightleftharpoons 2\\text{HI}\\text{(g)}`}
+      />
+      Biểu thức hằng số cân bằng là:
+    </>
+  }
+  options={[
+    {
+      jsx: (
+        <MathBlock
+          formula={`\\text{K}_c = \\frac{[2\\text{HI}]}{[\\text{H}_2][\\text{I}_2]}`}
+        />
+      ),
+      correct: false,
+    },
+    {
+      jsx: (
+        <MathBlock
+          formula={`\\text{K}_c = \\frac{[\\text{H}_2][\\text{I}_2]}{2[\\text{HI}]}`}
+        />
+      ),
+      correct: false,
+    },
+    {
+      jsx: (
+        <MathBlock
+          formula={`K_c = \\frac{[\\text{HI}]^2}{[\\text{H}_2][\\text{I}_2]}`}
+        />
+      ),
+      correct: true,
+    },
+    {
+      jsx: (
+        <MathBlock
+          formula={`K_c = \\frac{[\\text{H}_2][\\text{I}_2]}{[\\text{HI}]^2}`}
+        />
+      ),
+      correct: false,
+    },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 17: Cho cân bằng:
+      <MathBlock
+        formula={`\\text{N}_2\\text{(g)} + 3\\text{H}_2\\text{(g)} \\rightleftharpoons 2\\text{NH}_3\\text{(g)}`}
+      />
+      Phản ứng thuận tỏa nhiệt. Cân bằng không bị chuyển dịch khi
+    </>
+  }
+  options={[
+    { text: "A. Thay đổi nồng độ N₂.", correct: false },
+    { text: "B. Thêm chất xúc tác Fe.", correct: true },
+    { text: "C. Thay đổi nhiệt độ.", correct: false },
+    { text: "D. Thay đổi áp suất.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 18: Cho cân bằng:
+      <MathBlock
+        formula={`\\text{CO}\\text{(g)} + \\text{H}_2\\text{O}\\text{(g)} \\rightleftharpoons \\text{CO}_2\\text{(g)} + \\text{H}_2\\text{(g)}`}
+      />
+      Phản ứng thuận tỏa nhiệt. Cân bằng chuyển dịch theo chiều thuận khi:
+    </>
+  }
+  options={[
+    { text: "A. Thêm chất xúc tác.", correct: false },
+    { text: "B. Thêm H₂.", correct: false },
+    { text: "C. Tăng áp suất.", correct: false },
+    { text: "D. Giảm nhiệt độ.", correct: true },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 19: Cho phản ứng:
+      <MathBlock
+        formula={`\\text{N}_2\\text{(g)} + 3\\text{H}_2\\text{(g)} \\rightleftharpoons 2\\text{NH}_3\\text{(g)}`}
+      />
+      ΔH = –92 kJ. Hai biện pháp làm cân bằng dịch theo chiều thuận:
+    </>
+  }
+  options={[
+    { text: "A. Giảm T và giảm P.", correct: false },
+    { text: "B. Tăng T và tăng P.", correct: false },
+    { text: "C. Giảm T và tăng P.", correct: true },
+    { text: "D. Tăng T và giảm P.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 20: Cho các cân bằng:
+      <MathBlock
+        formula={`\\text{(I)}\\ 2\\text{HI}\\text{(g)} \\rightleftharpoons \\text{H}_2\\text{(g)} + \\text{I}_2\\text{(g)}`}
+      />
+      <MathBlock
+        formula={`\\text{(II)}\\ \\text{CaCO}_3\\text{(r)} \\rightleftharpoons \\text{CaO}\\text{(r)} + \\text{CO}_2\\text{(g)}`}
+      />
+      <MathBlock
+        formula={`\\text{(III)}\\ \\text{FeO}\\text{(r)} + \\text{CO}\\text{(g)} \\rightleftharpoons \\text{Fe}\\text{(r)} + \\text{CO}_2\\text{(g)}`}
+      />
+      <MathBlock
+        formula={`\\text{(IV)}\\ 2\\text{SO}_2\\text{(g)} + \\text{O}_2\\text{(g)} \\rightleftharpoons 2\\text{SO}_3\\text{(g)}`}
+      />
+      Khi giảm áp suất, số cân bằng dịch theo chiều nghịch là:
+    </>
+  }
+  options={[
+    { text: "A. 4.", correct: false },
+    { text: "B. 3.", correct: false },
+    { text: "C. 2.", correct: false },
+    { text: "D. 1.", correct: true },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 21: Cho cân bằng:
+      <MathBlock
+        formula={`2\\text{NO}_2\\text{(g)} \\rightleftharpoons \\text{N}_2\\text{O}_4\\text{(g)} \\ (\\text{nâu đỏ}) \\to (\\text{không màu})`}
+      />
+      Khi hạ nhiệt độ, màu nâu đỏ nhạt dần. Phản ứng thuận:
+    </>
+  }
+  options={[
+    { text: "A. ΔH > 0, tỏa nhiệt.", correct: false },
+    { text: "B. ΔH < 0, tỏa nhiệt.", correct: true },
+    { text: "C. ΔH > 0, thu nhiệt.", correct: false },
+    { text: "D. ΔH < 0, thu nhiệt.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 22: Cho cân bằng:
+      <MathBlock
+        formula={`\\text{CO}\\text{(g)} + \\text{H}_2\\text{O}\\text{(g)} \\rightleftharpoons \\text{CO}_2\\text{(g)} + \\text{H}_2\\text{(g)} \\ ΔH < 0`}
+      />
+      Các yếu tố làm thay đổi cân bằng:
+    </>
+  }
+  options={[
+    { text: "A. (1), (4), (5).", correct: false },
+    { text: "B. (1), (2), (3).", correct: false },
+    { text: "C. (2), (3), (4).", correct: false },
+    { text: "D. (1), (2), (4).", correct: true },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 23: Cho cân bằng:
+      <MathBlock
+        formula={`\\text{CaCO}_3\\text{(r)} \\rightleftharpoons \\text{CaO}\\text{(r)} + \\text{CO}_2\\text{(g)} \\ \\text{(thu nhiệt)}`}
+      />
+      Tác động làm cân bằng dịch theo chiều thuận:
+    </>
+  }
+  options={[
+    { text: "A. Giảm nhiệt độ.", correct: false },
+    { text: "B. Tăng áp suất.", correct: false },
+    { text: "C. Tăng nồng độ CO₂.", correct: false },
+    { text: "D. Tăng nhiệt độ.", correct: true },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 24: Cho cân bằng:
+      <MathBlock
+        formula={`\\text{PCl}_5\\text{(k)} \\rightleftharpoons \\text{PCl}_3\\text{(k)} + \\text{Cl}_2\\text{(k)} \\ ΔH > 0`}
+      />
+      Cân bằng dịch theo chiều thuận khi:
+    </>
+  }
+  options={[
+    { text: "A. Thêm PCl₃.", correct: false },
+    { text: "B. Tăng áp suất.", correct: false },
+    { text: "C. Tăng nhiệt độ.", correct: true },
+    { text: "D. Thêm Cl₂.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>Câu 25: Khi thay đổi áp suất, nhóm cân bằng không bị dịch là:</>
+  }
+  options={[
+    { text: "A. (1) và (2).", correct: false },
+    { text: "B. (1) và (3).", correct: false },
+    { text: "C. (3) và (4).", correct: true },
+    { text: "D. (2) và (4).", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 26: Cho cân bằng:
+      <MathBlock
+        formula={`2\\text{SO}_2\\text{(g)} + \\text{O}_2\\text{(g)} \\rightleftharpoons 2\\text{SO}_3\\text{(g)}`}
+      />
+      Khi tăng T, tỉ khối hỗn hợp giảm. Phát biểu đúng:
+    </>
+  }
+  options={[
+    { text: "A. Thu nhiệt – dịch nghịch khi tăng T.", correct: false },
+    { text: "B. Nghịch tỏa nhiệt – dịch thuận khi tăng T.", correct: false },
+    { text: "C. Nghịch thu nhiệt – dịch thuận khi tăng T.", correct: false },
+    { text: "D. Thuận tỏa nhiệt – dịch nghịch khi tăng T.", correct: true },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 27: Cho cân bằng:
+      <MathBlock
+        formula={`2\\text{NO}_2\\text{(g)} \\rightleftharpoons \\text{N}_2\\text{O}_4\\text{(g)}`}
+      />
+      Khi hạ nhiệt độ, màu nhạt dần. Phản ứng thuận:
+    </>
+  }
+  options={[
+    { text: "A. ΔH < 0, thu nhiệt.", correct: false },
+    { text: "B. ΔH > 0, tỏa nhiệt.", correct: false },
+    { text: "C. ΔH > 0, thu nhiệt.", correct: false },
+    { text: "D. ΔH < 0, tỏa nhiệt.", correct: true },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 28: Giảm thể tích bình chứa hai hệ:
+      <MathBlock
+        formula={`\\text{H}_2\\text{(g)} + \\text{I}_2\\text{(g)} \\rightleftharpoons 2\\text{HI}\\text{(g)}`}
+      />
+      <MathBlock
+        formula={`2\\text{NO}_2\\text{(g)} \\rightleftharpoons \\text{N}_2\\text{O}_4\\text{(g)}`}
+      />
+      Màu sắc thay đổi:
+    </>
+  }
+  options={[
+    { text: "A. Cả hai hệ màu đậm lên.", correct: false },
+    { text: "B. Hệ (1) không đổi; hệ (2) nhạt đi.", correct: true },
+    { text: "C. Cả hai hệ nhạt đi.", correct: false },
+    { text: "D. Hệ (1) đậm lên; hệ (2) nhạt đi.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>Câu 29: Cân bằng chuyển dịch theo chiều thuận khi tăng T và giảm P:</>
+  }
+  options={[
+    { text: "A. 1, 4.", correct: false },
+    { text: "B. 2, 4.", correct: false },
+    { text: "C. 1, 3.", correct: true },
+    { text: "D. 1, 2, 3, 4.", correct: false },
+  ]}
+/>
+<QuestBox
+  questionJSX={
+    <>
+      Câu 30: Cho phản ứng:
+      <MathBlock
+        formula={`\\text{H}_2\\text{(g)} + \\text{I}_2\\text{(g)} \\rightleftharpoons 2\\text{HI}\\text{(g)}`}
+      />Ở 430°C, K_C = 53,96. Ban đầu: 4,0 g H₂ và 406,4 g I₂ trong 10 L. Nồng độ
+      HI tại cân bằng bằng:
+    </>
+  }
+  options={[
+    { text: "A. 0.275 M.", correct: true },
+    { text: "B. 0.225 M.", correct: false },
+    { text: "C. 0.151 M.", correct: false },
+    { text: "D. 0.320 M.", correct: false },
+  ]}
+/>

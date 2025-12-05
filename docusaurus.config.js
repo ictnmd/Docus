@@ -128,19 +128,15 @@ const config = {
             items: [
               {
                 label: "Hoá học 10",
-                to: "/docs/hoa-10/tn1",
+                to: "/docs/category/hoá-học-10",
               },
               {
                 label: "Hoá học 11",
-                to: "/docs/hoa-11/tn1",
+                to: "/docs/category/hoá-học-11",
               },
               {
                 label: "Hoá học 12",
-                to: "/docs/hoa-12/tn1",
-              },
-              {
-                label: "Kiến thức chung",
-                to: "/docs/kien-thuc-chung/bang-tuan-hoan",
+                to: "/docs/category/hoá-học-12",
               },
             ],
           },
@@ -148,12 +144,12 @@ const config = {
             title: "Tài nguyên",
             items: [
               {
-                label: "Câu hỏi",
-                to: "/docs/cauhoi/cauhoi10/halogen",
+                label: "Kiến thức chung",
+                to: "/docs/category/kiến-thức-chung",
               },
               {
-                label: "Giới thiệu",
-                to: "/docs/intro",
+                label: "Câu hỏi",
+                to: "/docs/category/câu-hỏi-trắc-nghiệm",
               },
             ],
           },

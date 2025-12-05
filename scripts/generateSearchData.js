@@ -4,7 +4,13 @@ const matter = require("gray-matter");
 
 const docsDir = path.join(__dirname, "..", "docs");
 const outFile = path.join(__dirname, "..", "src", "data", "searchData.js");
-const equipmentDataFile = path.join(__dirname, "..", "src", "components", "EquipmentData.js");
+const equipmentDataFile = path.join(
+  __dirname,
+  "..",
+  "src",
+  "components",
+  "EquipmentData.js"
+);
 
 // Lấy toàn bộ file .md / .mdx
 function getAllDocs(dir) {
@@ -29,7 +35,7 @@ function extractEquipmentData() {
   try {
     const content = fs.readFileSync(equipmentDataFile, "utf8");
     const equipmentItems = [];
-    
+
     // Extract glass equipment - match all title fields
     const glassTitles = [];
     const glassRegex = /export const glassEquipment = \[([\s\S]*?)\];/;
@@ -42,7 +48,7 @@ function extractEquipmentData() {
         glassTitles.push(match[1]);
       }
     }
-    
+
     // Extract metal equipment - match all title fields
     const metalTitles = [];
     const metalRegex = /export const metalEquipment = \[([\s\S]*?)\];/;
@@ -55,33 +61,47 @@ function extractEquipmentData() {
         metalTitles.push(match[1]);
       }
     }
-    
+
     // Create search items for glass equipment
-    glassTitles.forEach(title => {
+    glassTitles.forEach((title) => {
       equipmentItems.push({
         title: title,
         description: `Dụng cụ thí nghiệm thuỷ tinh: ${title}. Xem chi tiết trong phần Các dụng cụ thuỷ tinh.`,
-        keywords: [title, "thuỷ tinh", "dụng cụ", "thiết bị", "phòng thí nghiệm", "glass"],
+        keywords: [
+          title,
+          "thuỷ tinh",
+          "dụng cụ",
+          "thiết bị",
+          "phòng thí nghiệm",
+          "glass",
+        ],
         content: title,
         url: "/docs/kien-thuc-chung/dung-cu",
         type: "equipment",
-        category: "glass"
+        category: "glass",
       });
     });
-    
+
     // Create search items for metal equipment
-    metalTitles.forEach(title => {
+    metalTitles.forEach((title) => {
       equipmentItems.push({
         title: title,
         description: `Dụng cụ thí nghiệm kim loại: ${title}. Xem chi tiết trong phần Các dụng cụ kim loại.`,
-        keywords: [title, "kim loại", "dụng cụ", "thiết bị", "phòng thí nghiệm", "metal"],
+        keywords: [
+          title,
+          "kim loại",
+          "dụng cụ",
+          "thiết bị",
+          "phòng thí nghiệm",
+          "metal",
+        ],
         content: title,
         url: "/docs/kien-thuc-chung/dung-cu",
         type: "equipment",
-        category: "metal"
+        category: "metal",
       });
     });
-    
+
     return equipmentItems;
   } catch (error) {
     console.warn("Warning: Could not extract equipment data:", error.message);
